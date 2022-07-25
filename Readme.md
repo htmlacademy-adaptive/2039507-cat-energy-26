@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
-* Студент: [Игорь Болдуев](https://up.htmlacademy.ru/adaptive/26/user/2039507).
-* Наставник: `Неизвестно`.
+- Студент: [Игорь Болдуев](https://up.htmlacademy.ru/adaptive/26/user/2039507).
+- Наставник: [Екатерина Комнатная](https://htmlacademy.ru/profile/id215761).
 
 ---
 
