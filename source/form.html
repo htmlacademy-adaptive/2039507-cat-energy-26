@@ -34,7 +34,7 @@
                 >каталог продукции
               </a>
             </li>
-            <li class="navigation__list-item navigation__list-item-current">
+            <li class="navigation__list-item">
               <a class="navigation__list" href="form.html">подбор программы</a>
             </li>
           </ul>
@@ -56,33 +56,33 @@
           action="https://echo.htmlacademy.ru/"
           method="post"
         >
-          <fieldset class="specifications">
-            <ul class="specifications__list">
-              <li class="specifications__item">
-                <label class="specifications__item__name"
+          <fieldset class="selection__fieldset">
+            <ul class="selection__list">
+              <li class="selection__item">
+                <label class="selection__label"
                   >имя:*
                   <input
-                    class="specifications__item__field"
+                    class="selection__input"
                     type="text"
                     placeholder="барсик"
                   />
                 </label>
               </li>
-              <li class="specifications__item">
-                <label class="specifications__item__name"
+              <li class="selection__item">
+                <label class="selection__label"
                   >Вес (кг):*
                   <input
-                    class="specifications__item__field"
+                    class="selection__input"
                     type="number"
                     placeholder="7"
                   />
                 </label>
               </li>
-              <li class="specifications__item">
-                <label class="specifications__item__name"
+              <li class="selection__item">
+                <label class="selection__label"
                   >Возраст (лет):
                   <input
-                    class="specifications__item__field"
+                    class="selection__input"
                     type="number"
                     placeholder="7"
                   />
@@ -96,7 +96,7 @@
                 <label class="choise-programm__label">
                   <span class="choise-programm__name">похудение</span>
                   <input
-                    class="choise-programm__field"
+                    class="choise-programm__input"
                     type="radio"
                     name="radio-button"
                   />
@@ -106,7 +106,7 @@
                 <label class="choise-programm__label">
                   <span class="choise-programm__name">Набор массы</span>
                   <input
-                    class="choise-programm__field"
+                    class="choise-programm__input"
                     type="radio"
                     name="radio-button"
                   />
@@ -118,7 +118,7 @@
                     Не знаю (Нужен ваш совет)
                   </span>
                   <input
-                    class="choise-programm__field"
+                    class="choise-programm__input"
                     type="radio"
                     name="radio-button"
                   />
@@ -135,7 +135,7 @@
                 <label class="contact-details__label">
                   <span class="contact-details__name">E-mail:*</span>
                   <input
-                    class="contact-details__field"
+                    class="contact-details__control"
                     type="email"
                     placeholder="kuklachev@gmail.com"
                   />
@@ -145,8 +145,8 @@
                 <label class="contact-details__label">
                   <span class="contact-details__name">Телефон:*</span>
                   <input
-                    class="contact-details__field"
-                    type="email"
+                    class="contact-details__control"
+                    type="tel"
                     placeholder="8 (960) 900-60-90"
                   />
                 </label>
@@ -156,7 +156,7 @@
           <fieldset class="comment">
             <h2 class="comment__title">Комментарий</h2>
             <textarea
-              class="comment__textarea"
+              class="comment__control"
               placeholder="Расскажите обо всех повaдках кота"
               rows="6"
               cols="26"
