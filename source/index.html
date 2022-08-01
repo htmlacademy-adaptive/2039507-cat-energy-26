@@ -10,19 +10,14 @@
 
     <header class="header">
       <div class="logo">
-        <a class="header__logo" href="../source/index.html">
-          <img
-            class="logo-image"
-            src="../source/img/logo-image.svg"
-            alt="Логотип"
-          />
-        </a>
+        <img class="logo-image" src="images/logo-image.svg" alt="логотип" />
         <img
           class="logo-text"
-          src="../source/img/logo-text.svg"
+          src="images/logo-text.svg"
           alt="текст логотипа"
         />
       </div>
+
       <nav class="navigation">
         <button class="navigation__toggle" type="button">
           <span class="visually-hidden">открыть меню</span>
@@ -30,10 +25,16 @@
         <div class="navigation__wrapper">
           <ul class="navigation__list">
             <li class="navigation__list-item navigation__list-item-current">
-              главная
+              <a class="navigation__link" href="index.html">главная</a>
             </li>
-            <li class="navigation__list-item">каталог продукции</li>
-            <li class="navigation__list-item">подбор программы</li>
+            <li class="navigation__list-item">
+              <a class="navigation__link" href="catalog.html"
+                >каталог продукции</a
+              >
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__link" href="form.html">подбор программы</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -46,7 +47,7 @@
         <div class="promo__wrapper">
           <h1 class="promo__title">функциональное питание для котов</h1>
           <p class="promo__slogan">занялся собой? займись котом!</p>
-          <a class="promo__button" href="#">подобрать программу</a>
+          <a class="promo__button" href="form.html">подобрать программу</a>
         </div>
       </section>
 
@@ -54,7 +55,7 @@
         <h1 class="visually-hidden">описание программ</h1>
         <div class="services__wrapper">
           <ul class="services__list">
-            <li class="services__item services__image-slim">
+            <li class="services__item">
               <h2 class="services__item-title">похудение</h2>
 
               <p class="services__description">
@@ -62,18 +63,18 @@
                 по деревьям? Пора на диету! Cat Energy Slim поможет вашему
                 питомцу сбросить лишний вес.
               </p>
-              <a class="services__link-catalog" href="../source/catalog.html"
+              <a class="services__link-catalog" href="catalog.html"
                 >каталог slim</a
               >
             </li>
-            <li class="services__item services__image-pro">
+            <li class="services__item">
               <h2 class="services__item-title">набор массы</h2>
 
               <p class="services__description">
                 Заработать авторитет среди дворовых котов и даже собак? Серия
                 Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
               </p>
-              <a class="services__link-catalog" href="../source/catalog.html"
+              <a class="services__link-catalog" href="catalog.html"
                 >каталог pro</a
               >
             </li>
@@ -122,20 +123,22 @@
             этом он не менял своих привычек и по-прежнему спит по 16 часов в
             день.
           </p>
-          <dl class="stats__list">
-            <div class="stats__item">
-              <dt class="stats__number">5 кг</dt>
-              <dd class="stats__description">снижение веса</dd>
-            </div>
-            <div class="stats__item">
-              <dt class="stats__number">60 дней</dt>
-              <dd class="stats__description">затрачено времени</dd>
-            </div>
-            <div class="stats__item">
-              <dt class="stats__number">15 000 руб</dt>
-              <dd class="stats__description">затраты на питание:</dd>
-            </div>
-          </dl>
+          <div class="stats">
+            <dl class="stats__list">
+              <div class="stats__item">
+                <dt class="stats__number">5 кг</dt>
+                <dd class="stats__description">снижение веса</dd>
+              </div>
+              <div class="stats__item">
+                <dt class="stats__number">60 дней</dt>
+                <dd class="stats__description">затрачено времени</dd>
+              </div>
+              <div class="stats__item">
+                <dt class="stats__number">15 000 руб</dt>
+                <dd class="stats__description">затраты на питание:</dd>
+              </div>
+            </dl>
+          </div>
         </div>
       </section>
 
@@ -154,10 +157,10 @@
       <footer class="footer">
         <div class="footer__wrapper">
           <div class="footer__logo">
-            <a class="footer__link" href="../source/index.html">
+            <a class="footer__link" href="index.html">
               <img
                 class="logo-text"
-                src="../source/img/logo-text.svg"
+                src="images/logo-text.svg"
                 alt="текст логотипа"
               />
             </a>
@@ -171,7 +174,7 @@
                   >VK</a
                 >
               </li>
-              <li class="social__item social__link--youtube">
+              <li class="social__item">
                 <a
                   class="social__link social__link--youtube"
                   href="https://www.youtube.com/user/htmlacademyru"
@@ -196,7 +199,7 @@
                 <p class="copyright__text">HTML Academy</p>
                 <img
                   class="copyright__image"
-                  src="../source/img/html-academy-logo.svg"
+                  src="images/html-academy-logo.svg"
                   alt="HTML Academy logo"
                 />
               </a>

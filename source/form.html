@@ -11,17 +11,12 @@
 
     <header class="header">
       <div class="logo">
-        <a class="header__logo" href="../source/index.html">
-          <img
-            class="logo-image"
-            src="../source/img/logo-image.svg"
-            alt="Логотип"
-          />
-
+        <a class="header__logo" href="index.html">
+          <img class="logo-image" src="images/logo-image.svg" alt="логотип" />
           <img
             class="logo-text"
-            src="../source/img/logo-text.svg"
-            alt="Логотип"
+            src="images/logo-text.svg"
+            alt="текст логотипа"
           />
         </a>
       </div>
@@ -31,10 +26,16 @@
         </button>
         <div class="navigation__wrapper">
           <ul class="navigation__list">
-            <li class="navigation__list-item">главная</li>
-            <li class="navigation__list-item">каталог продукции</li>
+            <li class="navigation__list-item">
+              <a class="navigation__link" href="index.html">главная</a>
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__link" href="catalog.html"
+                >каталог продукции
+              </a>
+            </li>
             <li class="navigation__list-item navigation__list-item-current">
-              подбор программы
+              <a class="navigation__list" href="form.html">подбор программы</a>
             </li>
           </ul>
         </div>
@@ -213,7 +214,7 @@
             <a class="footer__link" href="../source/index.html">
               <img
                 class="logo-text"
-                src="../source/img/logo-text.svg"
+                src="images/logo-text.svg"
                 alt="текст логотипа"
               />
             </a>
@@ -227,7 +228,7 @@
                   >VK</a
                 >
               </li>
-              <li class="social__item social__link--youtube">
+              <li class="social__item">
                 <a
                   class="social__link social__link--youtube"
                   href="https://www.youtube.com/user/htmlacademyru"
@@ -252,7 +253,7 @@
                 <p class="copyright__text">HTML Academy</p>
                 <img
                   class="copyright__image"
-                  src="../source/img/html-academy-logo.svg"
+                  src="images/html-academy-logo.svg"
                   alt="HTML Academy logo"
                 />
               </a>
