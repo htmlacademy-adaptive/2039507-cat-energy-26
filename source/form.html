@@ -47,7 +47,7 @@
     <main class="form">
       <div class="form__wrapper">
         <h1 class="form__title">Подбор программы</h1>
-        <span class="recommendation"
+        <span class="form__recommendation"
           >Заполните анкету, и мы подберем программу питания для вашего
           кота</span
         >
@@ -93,35 +93,37 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="choise-programm">
-            <ul class="choise-proglamm__list">
-              <li class="choise-programm__item">
-                <label class="choise-programm__label">
-                  <span class="choise-programm__name">похудение</span>
+          <fieldset class="selection__fieldset">
+            <ul class="selection__list">
+              <li class="selection__item">
+                <label class="selection__label">
+                  <span class="selection__name">похудение</span>
                   <input
-                    class="choise-programm__input"
+                    class="selection__input"
                     type="radio"
                     name="radio-button"
+                    value="slim"
                   />
                 </label>
               </li>
-              <li class="choise-programm__item">
-                <label class="choise-programm__label">
-                  <span class="choise-programm__name">Набор массы</span>
+              <li class="selection__item">
+                <label class="selection__label">
+                  <span class="selection__name">набор массы</span>
                   <input
-                    class="choise-programm__input"
+                    class="selection__input"
                     type="radio"
                     name="radio-button"
+                    value=""
                   />
                 </label>
               </li>
-              <li class="choise-programm__item">
-                <label class="choise-programm__label">
-                  <span class="choise-programm__name">
-                    Не знаю (Нужен ваш совет)
+              <li class="selection__item">
+                <label class="selection__label">
+                  <span class="selection__name">
+                    не знаю (нужен ваш совет)
                   </span>
                   <input
-                    class="choise-programm__input"
+                    class="selection__input"
                     type="radio"
                     name="radio-button"
                   />
@@ -129,27 +131,26 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="contact-details">
-            <h2 class="contact-details__title">
-              Контактные данные (владельца кота)
-            </h2>
-            <ul class="contact-details__list">
-              <li class="contact-details__item">
-                <label class="contact-details__label">
-                  <span class="contact-details__name">E-mail:*</span>
+
+          <fieldset class="selection__fieldset">
+            <h2 class="selection__title">контактные данные (владельца кота)</h2>
+            <ul class="selection__list">
+              <li class="selection__item">
+                <label class="selection__label">
+                  <span class="selection__name">е-mail:*</span>
                   <input
-                    class="contact-details__control"
+                    class="selection__control"
                     type="email"
                     placeholder="kuklachev@gmail.com"
                     name="email"
                   />
                 </label>
               </li>
-              <li class="contact-details__item">
-                <label class="contact-details__label">
-                  <span class="contact-details__name">Телефон:*</span>
+              <li class="selection__item">
+                <label class="selection__label">
+                  <span class="selection__name">телефон:*</span>
                   <input
-                    class="contact-details__control"
+                    class="selection__control"
                     type="tel"
                     placeholder="8 (960) 900-60-90"
                     name="telephone"
@@ -158,54 +159,57 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="comment">
-            <h2 class="comment__title">Комментарий</h2>
+
+          <fieldset class="selection__fieldset">
+            <h2 class="selection__title">комментарий</h2>
             <textarea
-              class="comment__control"
+              class="selection__control"
               placeholder="Расскажите обо всех повaдках кота"
               rows="6"
               cols="26"
+              name="comments"
             ></textarea>
           </fieldset>
-          <fieldset class="additionally">
-            <h2 class="additionally__title">Дополнительно</h2>
-            <ul class="additionally__list">
-              <li class="additionally__item">
-                <label class="additionally__label">
-                  <span class="additionally__name">сахарозаменитель</span>
+
+          <fieldset class="selection__fieldset">
+            <h2 class="selection__title">дополнительно</h2>
+            <ul class="selection__list">
+              <li class="selection__item">
+                <label class="selection__label">
+                  <span class="selection__name">сахарозаменитель</span>
                   <input
-                    class="additionally__button"
+                    class="selection__button"
                     type="checkbox"
                     name="sugar"
                     checked
                   />
                 </label>
               </li>
-              <li class="additionally__item">
-                <label class="additionally__label">
-                  <span class="additionally__name">питьевая вода</span>
+              <li class="selection__item">
+                <label class="selection__label">
+                  <span class="selection__name">питьевая вода</span>
                   <input
-                    class="additionally__button"
+                    class="selection__button"
                     type="checkbox"
                     name="water"
                   />
                 </label>
               </li>
-              <li class="additionally__item">
-                <label class="additionally__label">
-                  <span class="additionally__name">молоко</span>
+              <li class="selection__item">
+                <label class="selection__label">
+                  <span class="selection__name">молоко</span>
                   <input
-                    class="additionally__button"
+                    class="selection__button"
                     type="checkbox"
                     name="milk"
                   />
                 </label>
               </li>
-              <li class="additionally__item">
-                <label class="additionally__label">
-                  <span class="additionally__name">витамины</span>
+              <li class="selection__item">
+                <label class="selection__label">
+                  <span class="selection__name">витамины</span>
                   <input
-                    class="additionally__button"
+                    class="selection__button"
                     type="checkbox"
                     name="vitamins"
                   />
@@ -213,8 +217,8 @@
               </li>
             </ul>
           </fieldset>
-          <a class="send-request" href="#">отправить заявку</a>
-          <span class="form-legend">* — Обязательные поля</span>
+          <a class="selection__link" href="#">отправить заявку</a>
+          <span class="selection__legend">* — обязательные поля</span>
         </form>
 
         <section class="contacts">
@@ -224,13 +228,20 @@
             <span class="contacts__adress">
               ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
             </span>
-            <img
-              class="contacts__map"
-              src="images/location.png"
-              width="320"
-              height="362"
-              alt="карта"
-            />
+          </div>
+        </section>
+
+        <section class="map">
+          <div class="map__wrapper">
+            <h2 class="visually-hidden">локация</h2>
+            <iframe
+              class="map__frame"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003035!2d30.320858716011124!3d59.93871916905429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2spl!4v1659413939660!5m2!1sru!2spl"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </section>
       </div>
@@ -240,34 +251,34 @@
       <footer class="footer">
         <div class="footer__wrapper">
           <div class="footer__logo">
-            <a class="footer__link" href="../source/index.html">
+            <a class="footer__link" href="index.html">
               <img
-                class="logo-text"
+                class="footer__logo-text"
                 src="images/logo-text.svg"
                 alt="текст логотипа"
               />
             </a>
           </div>
           <div class="footer__social social">
-            <ul class="social-list">
-              <li class="social__item">
+            <ul class="footer-list">
+              <li class="footer__item">
                 <a
-                  class="social__link social__link--vk"
+                  class="footer__link footer__link--vk"
                   href="https://vk.com/htmlacademy"
                   >VK</a
                 >
               </li>
-              <li class="social__item">
+              <li class="footer__item">
                 <a
-                  class="social__link social__link--youtube"
+                  class="footer__link footer__link--youtube"
                   href="https://www.youtube.com/user/htmlacademyru"
                 >
                   youtube
                 </a>
               </li>
-              <li class="social__item">
+              <li class="footer__item">
                 <a
-                  class="social__link social__link--telegram"
+                  class="footer__link footer__link--telegram"
                   href="https://t.me/htmlacademy"
                 >
                   telegram
@@ -276,12 +287,12 @@
             </ul>
             <div class="footer__copyright copyright">
               <a
-                class="copyright__link"
+                class="footer__link"
                 href="https://htmlacademy.ru/intensive/adaptive"
               >
-                <p class="copyright__text">HTML Academy</p>
+                <p class="footer__text">HTML Academy</p>
                 <img
-                  class="copyright__image"
+                  class="footer__image"
                   src="images/html-academy-logo.svg"
                   alt="HTML Academy logo"
                 />
