@@ -12,17 +12,12 @@
 
     <header class="header">
       <div class="logo">
-        <a class="header__logo" href="../source/index.html">
-          <img
-            class="logo-image"
-            src="../source/img/logo-image.svg"
-            alt="Логотип"
-          />
-
+        <a class="header__logo" href="index.html">
+          <img class="logo-image" src="images/logo-image.svg" alt="логотип" />
           <img
             class="logo-text"
-            src="../source/img/logo-text.svg"
-            alt="Логотип"
+            src="images/logo-text.svg"
+            alt="текст логотипа"
           />
         </a>
       </div>
@@ -32,10 +27,16 @@
         </button>
         <div class="navigation__wrapper">
           <ul class="navigation__list">
-            <li class="navigation__list-item">главная</li>
-            <li class="navigation__list-item">каталог продукции</li>
-            <li class="navigation__list-item navigation__list-item-current">
-              подбор программы
+            <li class="navigation__list-item">
+              <a class="navigation__link" href="index.html">главная</a>
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__link" href="catalog.html"
+                >каталог продукции
+              </a>
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__list" href="form.html">подбор программы</a>
             </li>
           </ul>
         </div>
@@ -56,35 +57,38 @@
           action="https://echo.htmlacademy.ru/"
           method="post"
         >
-          <fieldset class="specifications">
-            <ul class="specifications__list">
-              <li class="specifications__item">
-                <label class="specifications__item__name"
+          <fieldset class="selection__fieldset">
+            <ul class="selection__list">
+              <li class="selection__item">
+                <label class="selection__label"
                   >имя:*
                   <input
-                    class="specifications__item__field"
+                    class="selection__input"
                     type="text"
                     placeholder="барсик"
+                    name="name"
                   />
                 </label>
               </li>
-              <li class="specifications__item">
-                <label class="specifications__item__name"
+              <li class="selection__item">
+                <label class="selection__label"
                   >Вес (кг):*
                   <input
-                    class="specifications__item__field"
+                    class="selection__input"
                     type="number"
                     placeholder="7"
+                    name="weight"
                   />
                 </label>
               </li>
-              <li class="specifications__item">
-                <label class="specifications__item__name"
+              <li class="selection__item">
+                <label class="selection__label"
                   >Возраст (лет):
                   <input
-                    class="specifications__item__field"
+                    class="selection__input"
                     type="number"
                     placeholder="7"
+                    name="age"
                   />
                 </label>
               </li>
@@ -96,7 +100,7 @@
                 <label class="choise-programm__label">
                   <span class="choise-programm__name">похудение</span>
                   <input
-                    class="choise-programm__field"
+                    class="choise-programm__input"
                     type="radio"
                     name="radio-button"
                   />
@@ -106,7 +110,7 @@
                 <label class="choise-programm__label">
                   <span class="choise-programm__name">Набор массы</span>
                   <input
-                    class="choise-programm__field"
+                    class="choise-programm__input"
                     type="radio"
                     name="radio-button"
                   />
@@ -118,7 +122,7 @@
                     Не знаю (Нужен ваш совет)
                   </span>
                   <input
-                    class="choise-programm__field"
+                    class="choise-programm__input"
                     type="radio"
                     name="radio-button"
                   />
@@ -135,9 +139,10 @@
                 <label class="contact-details__label">
                   <span class="contact-details__name">E-mail:*</span>
                   <input
-                    class="contact-details__field"
+                    class="contact-details__control"
                     type="email"
                     placeholder="kuklachev@gmail.com"
+                    name="email"
                   />
                 </label>
               </li>
@@ -145,9 +150,10 @@
                 <label class="contact-details__label">
                   <span class="contact-details__name">Телефон:*</span>
                   <input
-                    class="contact-details__field"
-                    type="email"
+                    class="contact-details__control"
+                    type="tel"
                     placeholder="8 (960) 900-60-90"
+                    name="telephone"
                   />
                 </label>
               </li>
@@ -156,7 +162,7 @@
           <fieldset class="comment">
             <h2 class="comment__title">Комментарий</h2>
             <textarea
-              class="comment__textarea"
+              class="comment__control"
               placeholder="Расскажите обо всех повaдках кота"
               rows="6"
               cols="26"
@@ -168,25 +174,42 @@
               <li class="additionally__item">
                 <label class="additionally__label">
                   <span class="additionally__name">сахарозаменитель</span>
-                  <input class="additionally__button" type="checkbox" checked />
+                  <input
+                    class="additionally__button"
+                    type="checkbox"
+                    name="sugar"
+                    checked
+                  />
                 </label>
               </li>
               <li class="additionally__item">
                 <label class="additionally__label">
                   <span class="additionally__name">питьевая вода</span>
-                  <input class="additionally__button" type="checkbox" />
+                  <input
+                    class="additionally__button"
+                    type="checkbox"
+                    name="water"
+                  />
                 </label>
               </li>
               <li class="additionally__item">
                 <label class="additionally__label">
                   <span class="additionally__name">молоко</span>
-                  <input class="additionally__button" type="checkbox" />
+                  <input
+                    class="additionally__button"
+                    type="checkbox"
+                    name="milk"
+                  />
                 </label>
               </li>
               <li class="additionally__item">
                 <label class="additionally__label">
                   <span class="additionally__name">витамины</span>
-                  <input class="additionally__button" type="checkbox" />
+                  <input
+                    class="additionally__button"
+                    type="checkbox"
+                    name="vitamins"
+                  />
                 </label>
               </li>
             </ul>
@@ -202,6 +225,13 @@
             <span class="contacts__adress">
               ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
             </span>
+            <img
+              class="contacts__map"
+              src="images/location.png"
+              width="320"
+              height="362"
+              alt="карта"
+            />
           </div>
         </section>
       </div>
@@ -214,7 +244,7 @@
             <a class="footer__link" href="../source/index.html">
               <img
                 class="logo-text"
-                src="../source/img/logo-text.svg"
+                src="images/logo-text.svg"
                 alt="текст логотипа"
               />
             </a>
@@ -228,7 +258,7 @@
                   >VK</a
                 >
               </li>
-              <li class="social__item social__link--youtube">
+              <li class="social__item">
                 <a
                   class="social__link social__link--youtube"
                   href="https://www.youtube.com/user/htmlacademyru"
@@ -253,7 +283,7 @@
                 <p class="copyright__text">HTML Academy</p>
                 <img
                   class="copyright__image"
-                  src="../source/img/html-academy-logo.svg"
+                  src="images/html-academy-logo.svg"
                   alt="HTML Academy logo"
                 />
               </a>
