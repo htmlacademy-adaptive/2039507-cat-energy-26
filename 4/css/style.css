@@ -141,6 +141,7 @@
   font-size: 16px;
   line-height: 16px;
   text-decoration: none;
+  text-transform: uppercase;
   color: #000000;
 }
 .item-block__icon {
@@ -166,7 +167,7 @@
   margin: 0;
   padding: 0;
 }
-.description__item:not(last-child) {
+.description__item:not(:last-child) {
   margin-bottom: 20px;
 }
 .description__text {
@@ -215,6 +216,7 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  color: #111111;
   margin: 0;
   padding: 0;
 }
@@ -222,7 +224,7 @@
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
   color: #444444;
 }
@@ -244,6 +246,10 @@
   color: #666666;
 }
 .copyright__link {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
   text-decoration: none;
   color: #444444;
 }
@@ -257,6 +263,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
+  text-transform: uppercase;
 }
 .stats__description {
   font-family: "Arial", sans-serif;
@@ -272,6 +279,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  text-transform: uppercase;
   border: none;
   background-color: transparent;
 }
@@ -294,6 +302,9 @@
 .card {
   min-height: 190px;
 }
+.card:last-child .card__title {
+  color: #111111;
+}
 .card__wrapper {
   margin: 8px 0;
   height: 100%;
@@ -309,6 +320,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  text-transform: uppercase;
 }
 .card__table {
   color: #444444;
@@ -333,6 +345,9 @@
   color: #ffffff;
 }
 .card__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
   margin-bottom: 30px;
 }
 .card__button-show-all {
@@ -357,6 +372,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
+  text-transform: uppercase;
 }
 .products__list {
   margin: 0;
@@ -369,9 +385,16 @@
 .position__title {
   margin: 0;
   padding: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #222222;
 }
 .position__table {
   margin-bottom: 15px;
+  color: #444444;
 }
 .position__button {
   font-family: "Oswald", "Arial", sans-serif;
@@ -424,7 +447,10 @@
   text-transform: uppercase;
 }
 .selection__fieldset {
+  margin: 0;
+  padding: 0;
   border: none;
+  box-sizing: border-box;
 }
 .selection__list {
   margin: 0;
@@ -437,9 +463,14 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #444444;
+  color: #222222;
 }
 .selection__input {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
   width: 100%;
   padding: 14px 0;
   padding-left: 15px;
@@ -458,7 +489,6 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  padding: 15px;
   width: 100%;
   text-transform: uppercase;
 }
@@ -475,6 +505,15 @@
   color: #ffffff;
   padding: 7px 44px;
   border: none;
+}
+.selection__legend {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
 }
 .additionally__label {
   font-family: "Oswald", "Arial", sans-serif;
