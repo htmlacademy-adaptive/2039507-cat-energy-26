@@ -1,3 +1,7 @@
+.margins {
+  margin: 0;
+  padding: 0;
+}
 @font-face {
   font-family: "Oswald";
   font-style: normal;
@@ -20,22 +24,6 @@
   padding: 0;
   border: 0;
   clip: rect(0 0 0 0);
-}
-.margins {
-  margin: 0;
-  padding: 0;
-}
-.button__order {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 10px 109px;
-  background-color: #68b738;
-  color: #ffffff;
 }
 .page__body {
   font-family: "Arial", sans-serif;
@@ -69,9 +57,8 @@
   height: 302px;
 }
 .promo__wrapper {
-  position: absolute;
-  padding: 30px 40px;
   margin-bottom: 20px;
+  padding: 0 20px;
 }
 .promo__title {
   font-family: "Oswald", "Arial", sans-serif;
@@ -100,7 +87,8 @@
   line-height: 18px;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 7px 44px;
+  padding: 14px 73px;
+  text-align: center;
   background-color: #68b738;
   color: #ffffff;
 }
@@ -348,6 +336,7 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
+  color: #444444;
   margin-bottom: 30px;
 }
 .card__button-show-all {
@@ -475,6 +464,7 @@
   padding: 14px 0;
   padding-left: 15px;
   color: #444444;
+  box-sizing: border-box;
 }
 .selection__title {
   margin: 0;
@@ -491,20 +481,23 @@
   line-height: 18px;
   width: 100%;
   text-transform: uppercase;
+  padding: 14px 0;
+  padding-left: 15px;
+  box-sizing: border-box;
 }
 .selection__link {
   font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  width: 100%;
   text-transform: uppercase;
-  text-decoration: none;
-  padding: 10px 109px;
-  background-color: #68b738;
-  color: #ffffff;
-  padding: 7px 44px;
+  padding: 12px;
+  text-align: center;
+  box-sizing: border-box;
   border: none;
+  color: #ffffff;
+  background-color: #68b738;
 }
 .selection__legend {
   margin: 0;
