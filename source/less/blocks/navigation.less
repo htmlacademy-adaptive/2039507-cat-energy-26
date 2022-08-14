@@ -3,13 +3,28 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
-  margin: 0;
-  padding: 0;
+  .margins;
   list-style-type: none;
+}
+
+.navigation__item {
+  text-align: center;
+  padding: 24px 0;
+  box-sizing: border-box;
 }
 
 .navigation__link {
   text-decoration: none;
-  color: #000000;
+  color: @black;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .navigation__list {
+    display: flex;
+  }
+
+  .navigation__item:not(:last-child) {
+    margin-right: 36px;
+  }
 }

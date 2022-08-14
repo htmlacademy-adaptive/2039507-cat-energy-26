@@ -5,8 +5,7 @@
     ),
     url("../images/index-background.jpg");
   background-repeat: no-repeat;
-  color: #ffffff;
-  width: 100%;
+  color: @white;
   height: 302px;
 }
 
@@ -15,14 +14,18 @@
   padding: 0 20px;
 }
 
+.promo-image {
+  width: 280px;
+  height: 270px;
+}
+
 .promo__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  margin: 0;
+  .margins;
   margin-bottom: 25px;
-  padding: 0;
 }
 
 .promo__slogan {
@@ -31,9 +34,7 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 300px;
-  padding: 0;
+  .margins;
 }
 
 .promo__button {
@@ -46,6 +47,6 @@
   text-decoration: none;
   padding: 14px 73px;
   text-align: center;
-  background-color: #68b738;
-  color: #ffffff;
+  background-color: @basic-green;
+  color: @white;
 }
