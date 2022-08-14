@@ -7,16 +7,58 @@
 }
 
 .example__title {
+  .margins;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  .margins;
+  margin-bottom: 40px;
 }
 
 .example__description {
-  margin: 0;
-  padding: 0;
+  .margins;
   color: @special_dark-grey;
+  margin-bottom: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .example__wrapper {
+    padding: 0 30px;
+  }
+
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .example__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example {
+    background-image: linear-gradient(
+      @white 30%,
+      @light-grey 30%,
+      @light-grey 100%
+    );
+  }
+  .example__wrapper {
+    padding: 0 110px;
+  }
+
+  .example__description {
+    width: 436px;
+  }
+
+  .example__title::before {
+    content: "";
+    position: absolute;
+    width: 235px;
+    height: 60px;
+    top: -100px;
+  }
 }

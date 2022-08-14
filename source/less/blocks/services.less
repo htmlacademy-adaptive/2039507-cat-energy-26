@@ -10,3 +10,24 @@
 .services__item:not(:last-child) {
   margin-bottom: 20px;
 }
+
+@media (min-width: @tablet-width) {
+  .services__wrapper {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .services__wrapper {
+    padding: 0 110px;
+  }
+
+  .services__list {
+    display: flex;
+  }
+
+  .services__item:not(:last-child) {
+    margin: 0;
+    margin-right: 80px;
+  }
+}

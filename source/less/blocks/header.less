@@ -2,15 +2,17 @@
   padding: 10px 20px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: @tablet-width) {
   .header__wrapper {
     display: flex;
     justify-content: space-between;
     height: 78px;
+    padding: 10px 30px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: @desktop-width) {
     .header__wrapper {
+      padding: 10px 110px;
       align-items: flex-end;
       height: 120px;
     }

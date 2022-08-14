@@ -20,21 +20,24 @@
 }
 
 .promo__title {
+  .margins;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  .margins;
-  margin-bottom: 25px;
+  padding: 30px 0;
+  text-align: center;
 }
 
 .promo__slogan {
+  .margins;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-  .margins;
+  text-align: center;
+  padding-bottom: 30px;
 }
 
 .promo__button {
@@ -49,4 +52,36 @@
   text-align: center;
   background-color: @basic-green;
   color: @white;
+}
+
+@media (min-width: @tablet-width) {
+  .promo {
+    background-image: url("images/index-promo-tablet .png");
+  }
+
+  .promo__wrapper {
+    padding: 0 30px;
+  }
+
+  .promo__title {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 30px 0;
+    color: @black;
+    text-align: left;
+  }
+
+  .promo__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: @black;
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo__wrapper {
+    padding: 0 110px;
+  }
 }
