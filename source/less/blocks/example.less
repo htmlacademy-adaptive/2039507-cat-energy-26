@@ -23,6 +23,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .example {
+    background-color: @white;
+  }
+
   .example__wrapper {
     padding: 0 30px;
   }
@@ -40,25 +44,19 @@
 
 @media (min-width: @desktop-width) {
   .example {
-    background-image: linear-gradient(
-      @white 30%,
-      @light-grey 30%,
-      @light-grey 100%
-    );
+    background-image: linear-gradient(@white 30%, @light-grey 30%);
   }
   .example__wrapper {
+    width: 546px;
     padding: 0 110px;
+  }
+
+  .example__title {
+    margin-bottom: 146px;
   }
 
   .example__description {
     width: 436px;
-  }
-
-  .example__title::before {
-    content: "";
-    position: absolute;
-    width: 235px;
-    height: 60px;
-    top: -100px;
+    margin-bottom: 69px;
   }
 }

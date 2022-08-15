@@ -55,12 +55,19 @@
 }
 
 @media (min-width: @tablet-width) {
-  .promo {
-    background-image: url("images/index-promo-tablet .png");
-  }
-
   .promo__wrapper {
     padding: 0 30px;
+  }
+
+  .promo__wrapper::before {
+    content: "";
+    position: absolute;
+    width: 709px;
+    height: 609px;
+    bottom: 0;
+    left: 0;
+    background-image: url("images/index-promo-tablet .png");
+    background-repeat: no-repeat;
   }
 
   .promo__title {
