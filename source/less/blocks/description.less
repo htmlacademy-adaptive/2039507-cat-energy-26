@@ -1,4 +1,5 @@
 .description__wrapper {
+  position: relative;
   padding: 20px;
 }
 
@@ -25,8 +26,45 @@
   margin-bottom: 20px;
 }
 
+.description__icon-leaf {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  top: 18px;
+  left: 28px;
+  z-index: 1;
+}
+
+.description__icon-tub {
+  position: absolute;
+  width: 29px;
+  height: 31px;
+  top: 10px;
+  left: 27px;
+  z-index: 1;
+}
+
+.description__icon-eat {
+  position: absolute;
+  width: 25px;
+  height: 30px;
+  top: 16px;
+  left: 27px;
+  z-index: 1;
+}
+
+.description__icon-alarm {
+  position: absolute;
+  width: 32px;
+  height: 33px;
+  top: 16px;
+  left: 25px;
+  z-index: 1;
+}
+
 .description__text {
   .margins;
+  position: relative;
   color: @special_dark-grey;
   padding-left: 80px;
 }
@@ -77,11 +115,35 @@
   .description__text::before {
     content: "";
     position: absolute;
-    top: 10px;
+    top: -100px;
     left: 0;
     background-color: @basic-green;
     width: 80px;
     height: 80px;
+  }
+
+  .description__icon-leaf {
+    width: 30px;
+    height: 32px;
+    top: 85px;
+  }
+
+  .description__icon-tub {
+    width: 29px;
+    height: 31px;
+    top: 85px;
+  }
+
+  .description__icon-eat {
+    width: 25px;
+    height: 30px;
+    top: 85px;
+  }
+
+  .description__icon-alarm {
+    width: 32px;
+    height: 33px;
+    top: 85px;
   }
 }
 
