@@ -1,23 +1,60 @@
-.gift {
-  padding: 0 20px;
+@media (min-width: @mobile-width) {
+  .gift__wrapper {
+    padding: 0 20px;
+  }
+
+  .gift__wrapper {
+    background-image: linear-gradient(
+        hsl(97 53% 47% / 85%),
+        hsl(97 53% 47% / 85%)
+      ),
+      url("../images/gift.png");
+    background-repeat: no-repeat;
+    height: 290px;
+  }
+
+  .gift__title {
+    .margins;
+    font-family: "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: @white;
+  }
 }
 
-.gift__wrapper {
-  background-image: linear-gradient(
-      hsl(97 53% 47% / 85%),
-      hsl(97 53% 47% / 85%)
-    ),
-    url("../images/gift.png");
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 290px;
+@media (min-width: @tablet-width) {
+  .gift__wrapper {
+    margin: 0 30px;
+    background-image: linear-gradient(
+        hsl(97 53% 47% / 85%),
+        hsl(97 53% 47% / 85%)
+      ),
+      url("../images/image-catalog-tablet.png");
+    background-repeat: no-repeat;
+    height: 200px;
+  }
+
+  .gift__title {
+    width: 165px;
+  }
 }
 
-.gift__title {
-  .margins;
-  font-family: "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: @white;
+@media (min-width: @desktop-width) {
+  .gift {
+    position: absolute;
+    bottom: -280px;
+    right: 20px;
+  }
+
+  .gift__wrapper {
+    background-image: linear-gradient(
+        hsl(97 53% 47% / 85%),
+        hsl(97 53% 47% / 85%)
+      ),
+      url("../images/gift.png");
+    background-repeat: no-repeat;
+    width: 245px;
+    height: 290px;
+  }
 }
