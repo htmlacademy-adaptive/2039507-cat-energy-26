@@ -1,7 +1,37 @@
-.additionally__label {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
+@media (min-width: @mobile-width) {
+  .additionally {
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: repeat(1, 95%);
+    grid-template-rows: repeat(4, 30%);
+    row-gap: 5%;
+  }
+
+  .additionally__label {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+
+  .additionally__item {
+    height: 18px;
+    padding: 5px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .additionally {
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 30%);
+    row-gap: 100%;
+    column-gap: 5%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additionally {
+    grid-template-columns: repeat(4, 20%);
+  }
 }

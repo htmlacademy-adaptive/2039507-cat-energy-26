@@ -11,36 +11,39 @@
     <!--header-->
 
     <header class="header">
-      <div class="logo">
-        <a class="header__logo" href="index.html">
-          <img class="logo-image" src="images/logo-image.svg" alt="логотип" />
+      <div class="header__wrapper">
+        <div class="logo">
+          <img class="logo__image" src="images/logo-image.svg" alt="логотип" />
           <img
-            class="logo-text"
+            class="logo__text"
             src="images/logo-text.svg"
             alt="текст логотипа"
           />
-        </a>
-      </div>
-      <nav class="navigation">
-        <button class="navigation__toggle" type="button">
-          <span class="visually-hidden">открыть меню</span>
-        </button>
-        <div class="navigation__wrapper">
-          <ul class="navigation__list">
-            <li class="navigation__list-item">
-              <a class="navigation__link" href="index.html">главная</a>
-            </li>
-            <li class="navigation__list-item">
-              <a class="navigation__link" href="catalog.html"
-                >каталог продукции
-              </a>
-            </li>
-            <li class="navigation__list-item">
-              <a class="navigation__link" href="form.html">подбор программы</a>
-            </li>
-          </ul>
+          <button class="logo__toggle" type="button"></button>
         </div>
-      </nav>
+
+        <nav class="navigation">
+            <span class="visually-hidden">открыть меню</span>
+          </button>
+          <div class="navigation__wrapper">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a class="navigation__link" href="index.html">главная</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="catalog.html"
+                  >каталог продукции</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="form.html"
+                  >подбор программы</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <!--main-->
@@ -52,15 +55,15 @@
           Заполните анкету, и мы подберем программу питания для вашего кота
         </p>
         <form
-          class="selection"
+          class="form__selection selection"
           action="https://echo.htmlacademy.ru/"
           method="post"
         >
           <fieldset class="selection__fieldset">
             <ul class="selection__list">
               <li class="selection__item">
-                <label class="selection__label"
-                  >имя:*
+                <label class="selection__label">
+                    имя:*
                   <input
                     class="selection__input"
                     type="text"
@@ -216,10 +219,12 @@
               </li>
             </ul>
           </fieldset>
-          <button class="selection__link" type="button">
+          <div class="selection__footer">
+          <a class="selection__footer-link" href="#">
             отправить заявку
-          </button>
-          <p class="selection__legend">* — Обязательные поля</p>
+          </a>
+          <p class="selection__footer-legend">* — Обязательные поля</p>
+        </div>
         </form>
 
         <section class="contacts">

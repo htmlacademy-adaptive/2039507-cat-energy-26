@@ -1,9 +1,6 @@
-.form__wrapper {
-  padding: 0 20px;
-}
-
 .form__title {
   .margins;
+  margin: 27px 0;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
@@ -12,9 +9,43 @@
 
 .form__recommendation {
   .margins;
+  margin-bottom: 37px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  width: 262px;
+}
+
+@media (min-width: @mobile-width) {
+  .form__title {
+    padding: 0 20px;
+  }
+
+  .form__recommendation {
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form__title {
+    .margins;
+    padding: 0 70px;
+    padding-bottom: 54px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .form__recommendation {
+    width: 323px;
+    padding: 0 70px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__recommendation {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
