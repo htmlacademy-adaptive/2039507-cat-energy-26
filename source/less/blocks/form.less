@@ -1,3 +1,7 @@
+.form__wrapper {
+  padding: 0 20px;
+}
+
 .form__title {
   .margins;
   margin: 27px 0;
@@ -18,20 +22,12 @@
   width: 262px;
 }
 
-@media (min-width: @mobile-width) {
-  .form__title {
-    padding: 0 20px;
-  }
-
-  .form__recommendation {
-    padding: 0 20px;
-  }
-}
-
 @media (min-width: @tablet-width) {
-  .form__title {
-    .margins;
+  .form__wrapper {
     padding: 0 70px;
+  }
+
+  .form__title {
     padding-bottom: 54px;
     font-size: 60px;
     line-height: 60px;
@@ -44,6 +40,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .form__wrapper {
+    padding: 77px 110px;
+  }
+
   .form__recommendation {
     font-size: 20px;
     line-height: 30px;

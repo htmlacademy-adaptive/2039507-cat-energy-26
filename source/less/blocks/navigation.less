@@ -15,8 +15,8 @@
 
 .navigation__link {
   text-decoration: none;
-  color: @black;
   text-transform: uppercase;
+  color: @black;
 }
 
 @media (min-width: @tablet-width) {
@@ -33,11 +33,11 @@
 }
 
 @media (min-width: @desktop-width) {
-  .navigation__item {
-    z-index: 1;
+  .navigation__link--white {
+    color: @white;
   }
 
-  .navigation__link {
-    color: @white;
+  .navigation__item {
+    z-index: 1;
   }
 }

@@ -1,0 +1,19 @@
+.selection__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: @mobile-width) {
+  .selection__wrapper {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .selection__wrapper {
+    width: 1200px;
+    padding: 80px 110px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
