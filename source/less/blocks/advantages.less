@@ -3,9 +3,10 @@
 }
 
 .advantages__wrapper {
-  position: relative;
-  padding: 20px;
   height: 256px;
+  width: 320px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .advantages__list {
@@ -15,14 +16,14 @@
 
 @media (max-width: 767px) {
   .advantages__item--fat {
-    position: absolute;
     content: "";
+    position: absolute;
     top: 0;
     left: 47px;
     overflow: hidden;
     width: 128px;
-    height: 280px;
-    background-image: url("../images/fat-cat-mobile.png");
+    height: 230px;
+    background-image: url("../img/fat-cat-mobile.png");
     background-color: @light-grey;
     background-repeat: no-repeat;
     z-index: 1;
@@ -31,12 +32,11 @@
   .advantages__item--skinny {
     position: absolute;
     content: "";
-    top: 0;
     left: 63px;
-    background-image: url("../images/skinny-cat-mobile.png");
+    background-image: url("../img/skinny-cat-mobile.png");
     background-repeat: no-repeat;
     width: 220px;
-    height: 280px;
+    height: 230px;
   }
 }
 
@@ -46,41 +46,34 @@
   }
 
   .advantages__wrapper {
-    height: 616px;
-  }
-
-  .advantages__image {
     width: 560px;
-    height: 512px;
+    height: 616px;
+    margin: 0 auto;
   }
 
   .advantages__item--fat {
     position: absolute;
-    background-image: url("../images/fat-cat-tablet.png"),
+    background-image: url("../img/fat-cat-tablet.png"),
       linear-gradient(@white 35%, @light-grey 35%);
-    overflow: hidden;
+    background-repeat: no-repeat;
     width: 290px;
-    height: 512px;
+    height: 530px;
     left: 100px;
     z-index: 1;
   }
 
   .advantages__item--skinny {
     position: absolute;
-    background-image: url("../images/skinny-cat-tablet.png");
+    background-image: url("../img/skinny-cat-tablet.png");
     background-repeat: no-repeat;
     width: 560px;
-    height: 512px;
+    height: 530px;
     left: 100px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .advantages {
-    content: "";
-    position: absolute;
-    top: 1607px;
-    right: 110px;
-    width: 770px;
+    background-color: transparent;
   }
 }

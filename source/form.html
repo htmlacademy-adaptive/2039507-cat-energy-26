@@ -11,12 +11,12 @@
     <!--header-->
 
     <header class="header">
-      <div class="header__wrapper">
+      <div class="header__wrapper container">
         <a class="logo" href="index.html">
-          <img class="logo__image" src="images/logo-image.svg" alt="логотип" />
+          <img class="logo__image" src="img/logo-image.svg" alt="логотип" />
           <img
             class="logo__text"
-            src="images/logo-text.svg"
+            src="img/logo-text.svg"
             alt="текст логотипа"
           />
           <button class="logo__toggle" type="button"></button>
@@ -135,7 +135,11 @@
           </fieldset>
 
           <fieldset class="selection__fieldset">
-            <h2 class="selection__title">Контактные данные (владельца кота)</h2>
+            <div class="selection__title__wrapper-data">
+              <h2 class="selection__title">
+                Контактные данные (владельца кота)
+              </h2>
+            </div>
             <ul class="selection__list">
               <li class="selection__item">
                 <label class="selection__label"
@@ -163,7 +167,9 @@
           </fieldset>
 
           <fieldset class="selection__fieldset">
-            <h2 class="selection__title">Комментарий</h2>
+            <div class="selection__title__wrapper-comment">
+              <h2 class="selection__title">Комментарий</h2>
+            </div>
             <textarea
               class="selection__control"
               placeholder="Расскажите обо всех повaдках кота"
@@ -174,7 +180,9 @@
           </fieldset>
 
           <fieldset class="selection__fieldset">
-            <h2 class="selection__title">Дополнительно</h2>
+            <div class="selection__title__wrapper-additionally">
+              <h2 class="selection__title">Дополнительно</h2>
+            </div>
             <ul class="selection__list additionally">
               <li class="additionally__item">
                 <label class="additionally__label"
@@ -254,12 +262,12 @@
     <!-- footer -->
 
     <footer class="footer">
-      <div class="footer__wrapper">
+      <div class="footer__wrapper container">
         <div class="footer__logo">
           <a class="footer__link" href="index.html">
             <img
               class="footer__logo-text"
-              src="images/logo-text.svg"
+              src="img/logo-text.svg"
               alt="текст логотипа"
             />
           </a>
@@ -335,7 +343,7 @@
             <p class="copyright__text">HTML Academy</p>
             <img
               class="copyright__image"
-              src="images/html-academy-logo.svg"
+              src="img/html-academy-logo.svg"
               alt="HTML Academy logo"
             />
           </a>

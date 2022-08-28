@@ -1,4 +1,5 @@
 .selection {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
@@ -50,6 +51,13 @@
   font-size: 24px;
   line-height: 26px;
   margin-bottom: 35px;
+  position: relative;
+  top: -30px;
+  left: 0;
+}
+
+.selection__title-wrapper {
+  border-top: 3px solid @basic-green;
 }
 
 .selection__control {
@@ -107,20 +115,17 @@
 
 @media (min-width: @tablet-width) {
   .selection {
-    display: grid;
-    grid-template-columns: 708px;
-    row-gap: 60px;
+    display: flex;
   }
 
   .selection__fieldset {
     padding: 40px 0;
-    padding-right: 70px;
     box-sizing: border-box;
     vertical-align: middle;
   }
 
-  .selection__link {
-    grid-column-start: 1;
+  .selection__fieldset:nth-child(2) {
+    border: 1px solid @light-grey;
   }
 
   .selection__legend {
@@ -141,49 +146,34 @@
   }
 
   .selection {
-    display: grid;
-    grid-template-columns: repeat(2, 568px);
-    grid-template-rows: repeat(4, 200px);
-    column-gap: 80px;
+    width: 1220px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
 
   .selection__fieldset {
     .margins;
+    margin-bottom: 69px;
+    width: 568px;
   }
 
-  .selection__fieldset:nth-child(2) {
-    color: @light-grey;
-    border: 1px solid @light-grey;
-    padding: 30px;
-
-    .selection__list {
-      display: flex;
-      flex-direction: column;
-    }
+  .selection__fieldset:first-child {
+    margin-right: 80px;
   }
 
-  .selection__fieldset:nth-child(3) {
-    grid-column-start: span 2;
-
-    .selection__list {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .selection__item {
-      width: 570px;
-    }
-  }
-
-  .selection__fieldset:nth-child(4) {
-    grid-column-start: span 2;
-  }
-
-  .selection__fieldset:nth-child(5) {
-    grid-column-start: span 2;
+  .selection__title__wrapper-data,
+  .selection__title__wrapper-comment,
+  .selection__title__wrapper-additionally {
+    width: 1220px;
   }
 
   .selection__footer {
-    grid-template-columns: repeat(2, 80%);
+    width: 1220px;
+  }
+
+  .selection__list {
+    display: flex;
+    flex-direction: column;
   }
 }

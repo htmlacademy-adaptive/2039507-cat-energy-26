@@ -1,5 +1,5 @@
 .catalog__wrapper {
-  padding: 25px 20px;
+  margin: 0 auto;
 }
 
 .catalog__title {
@@ -16,9 +16,14 @@
   list-style-type: none;
 }
 
+.catalog__item {
+  width: 280px;
+  margin: 0 auto;
+}
+
 @media (min-width: @tablet-width) {
   .catalog__wrapper {
-    padding: 0 30px;
+    width: 708px;
   }
 
   .catalog__title {
@@ -27,28 +32,27 @@
   }
 
   .catalog__list {
-    display: grid;
-    grid-template-columns: repeat(2, 320px);
-    column-gap: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
   }
 
   .catalog__item {
-    display: flex;
-    flex-direction: column;
+    width: 324px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .catalog__wrapper {
-    padding: 0 110px;
+    width: 1440px;
   }
 
   .catalog__title {
     margin-top: 74px;
   }
 
-  .catalog__list {
-    grid-template-columns: repeat(4, 245px);
-    column-gap: 80px;
+  .catalog__item {
+    width: 245px;
   }
 }

@@ -2,10 +2,6 @@
   background-color: @light-grey;
 }
 
-.example__wrapper {
-  padding: 25px 20px;
-}
-
 .example__title {
   .margins;
   font-family: "Oswald", "Arial", sans-serif;
@@ -13,6 +9,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+  padding-top: 25px;
   margin-bottom: 40px;
 }
 
@@ -25,10 +22,6 @@
 @media (min-width: @tablet-width) {
   .example {
     background-color: @white;
-  }
-
-  .example__wrapper {
-    padding: 0 30px;
   }
 
   .example__title {
@@ -44,13 +37,12 @@
 
 @media (min-width: @desktop-width) {
   .example {
-    background-image: linear-gradient(@white 30%, @light-grey 30%);
+    background-color: transparent;
   }
 
   .example__wrapper {
-    width: 400px;
-    padding: 20px 110px;
     padding-right: 800px;
+    min-height: 600px;
   }
 
   .example__title {
@@ -59,6 +51,6 @@
 
   .example__description {
     width: 436px;
-    margin-bottom: 69px;
+    margin-bottom: 70px;
   }
 }
