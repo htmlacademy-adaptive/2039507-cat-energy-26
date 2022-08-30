@@ -1,5 +1,6 @@
 .promo__title {
   .margins;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
@@ -9,6 +10,7 @@
 
 .promo__slogan {
   .margins;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
@@ -19,6 +21,7 @@
 
 .promo__button {
   display: block;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -93,12 +96,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .promo__wrapper {
-    position: relative;
-    max-width: 1440px;
-    min-height: 650px;
-    box-sizing: border-box;
-
+  .promo {
     &::before {
       content: "";
       position: absolute;
@@ -112,7 +110,15 @@
         ),
         url("../img/index-background-desktop.png");
       background-repeat: no-repeat;
+      background-size: cover;
     }
+  }
+
+  .promo__wrapper {
+    position: relative;
+    max-width: 1440px;
+    min-height: 650px;
+    box-sizing: border-box;
 
     &::after {
       content: "";

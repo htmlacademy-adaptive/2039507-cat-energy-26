@@ -1,9 +1,7 @@
 .additionally {
-  margin-top: 10%;
-  display: grid;
-  grid-template-columns: repeat(1, 95%);
-  grid-template-rows: repeat(4, 30%);
-  row-gap: 5%;
+  display: flex;
+  flex-direction: column;
+  max-width: 280px;
 }
 
 .additionally__label {
@@ -14,22 +12,32 @@
   text-transform: uppercase;
 }
 
+.additionally__list {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .additionally__item {
-  height: 18px;
-  padding: 5px;
+  height: 30px;
+  padding-left: 46px;
 }
 
 @media (min-width: @tablet-width) {
   .additionally {
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(2, 30%);
-    row-gap: 100%;
-    column-gap: 5%;
+    max-width: 565px;
+    height: 90px;
+    flex-wrap: wrap;
+  }
+
+  .additionally__item {
+    height: 40px;
+    padding-left: 60px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .additionally {
-    grid-template-columns: repeat(4, 20%);
+    max-width: 1220px;
+    flex-direction: row;
   }
 }

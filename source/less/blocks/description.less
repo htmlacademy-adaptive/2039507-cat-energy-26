@@ -1,6 +1,6 @@
 .description__wrapper {
   position: relative;
-  height: 420px;
+  min-height: 420px;
 }
 
 .description__list {
@@ -75,13 +75,17 @@
 
 .description__text {
   .margins;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400px;
+  line-height: 18px;
   color: @special_dark-grey;
   padding-left: 80px;
 }
 
 @media (min-width: @tablet-width) {
   .description__wrapper {
-    height: 800px;
+    min-height: 800px;
   }
 
   .description__title {
@@ -150,7 +154,7 @@
 
 @media (min-width: @desktop-width) {
   .description__wrapper {
-    height: 440px;
+    min-height: 440px;
   }
 
   .description__item:not(:last-child) {

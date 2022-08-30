@@ -5,14 +5,25 @@
 }
 
 .selection__fieldset {
-  .margins;
   padding: 20px 0;
   border: none;
+}
+
+.selection__fieldset-name {
+  border: none;
+}
+
+.selection__fieldset-services {
+  border: none;
+  border-top: 1px solid @light-grey;
+  border-bottom: 1px solid @light-grey;
 }
 
 .selection__list {
   .margins;
   list-style-type: none;
+  margin: 0 auto;
+  max-width: 280px;
 }
 
 .selection__item {
@@ -29,6 +40,7 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
+  max-width: 280px;
 }
 
 .selection__input {
@@ -45,31 +57,46 @@
 }
 
 .selection__title {
-  .margins;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
+  padding: 0 20px;
   margin-bottom: 35px;
   position: relative;
   top: -30px;
   left: 0;
-}
-
-.selection__title-wrapper {
   border-top: 3px solid @basic-green;
 }
 
-.selection__control {
+.selection__control-email,
+.selection__control-tel {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  width: 100%;
   text-transform: uppercase;
   padding: 14px 0;
   padding-left: 15px;
   box-sizing: border-box;
+  width: 219px;
+}
+
+.selection__control-comment {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding: 14px 0;
+  padding-left: 15px;
+  box-sizing: border-box;
+  min-width: 280px;
+  margin: 0 auto;
+}
+
+.selection__wrapper {
+  padding: 0 20px;
 }
 
 .selection__legend {
@@ -82,11 +109,10 @@
   width: 45%;
 }
 
-.selection__footer {
-  padding: 40px 0;
-  display: grid;
-  grid-template-rows: repeat(2, 60%);
-  vertical-align: middle;
+.selection__footer-wrapper {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .selection__footer-link {
@@ -114,66 +140,90 @@
 }
 
 @media (min-width: @tablet-width) {
-  .selection {
-    display: flex;
+  .selection__wrapper {
+    padding: 0 70px;
   }
 
-  .selection__fieldset {
-    padding: 40px 0;
-    box-sizing: border-box;
-    vertical-align: middle;
-  }
-
-  .selection__fieldset:nth-child(2) {
-    border: 1px solid @light-grey;
+  .selection__list {
+    max-width: 630px;
   }
 
   .selection__legend {
     margin-left: 200px;
   }
 
-  .selection__footer {
-    display: grid;
-    grid-template-columns: repeat(2, 40%);
-    grid-template-rows: repeat(1, 90%);
+  .selection__label {
+    max-width: 630px;
+    margin: 0 auto;
+  }
+
+  .selection__control-email,
+  .selection__control-tel {
+    width: 535px;
+  }
+
+  .selection__control-comment {
+    width: 631px;
+  }
+
+  .selection__footer-wrapper {
+    flex-direction: row;
+    max-width: 708px;
+    padding: 0 70px;
+  }
+
+  .selection__footer-link {
+    width: 100%;
+  }
+
+  .selection__footer-legend {
+    width: 100%;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .selection__wrapper {
+    max-width: 1220px;
+    padding: 0 110px;
+    margin: 0 auto;
+  }
+
   .selection__title {
     font-size: 36px;
     line-height: 36px;
   }
 
-  .selection {
-    width: 1220px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-
-  .selection__fieldset {
-    .margins;
-    margin-bottom: 69px;
-    width: 568px;
-  }
-
-  .selection__fieldset:first-child {
+  .selection__fieldset-name {
     margin-right: 80px;
   }
 
-  .selection__title__wrapper-data,
-  .selection__title__wrapper-comment,
-  .selection__title__wrapper-additionally {
-    width: 1220px;
+  .selection__fieldset-name,
+  .selection__fieldset-services {
+    width: 570px;
   }
 
-  .selection__footer {
-    width: 1220px;
+  .selection__control-comment {
+    min-width: 1220px;
   }
 
   .selection__list {
     display: flex;
     flex-direction: column;
+    max-width: 570px;
+  }
+
+  .selection__list:nth-child(2) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .selection__label {
+    max-width: 670px;
+  }
+
+  .selection__footer-wrapper {
+    max-width: 1220px;
+    padding: 0 110px;
+    margin: 0 auto;
   }
 }
