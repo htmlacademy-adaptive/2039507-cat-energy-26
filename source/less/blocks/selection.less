@@ -92,11 +92,12 @@
   padding-left: 15px;
   box-sizing: border-box;
   min-width: 280px;
-  margin: 0 auto;
 }
 
 .selection__wrapper {
+  max-width: 280px;
   padding: 0 20px;
+  margin: 0 auto;
 }
 
 .selection__legend {
@@ -141,7 +142,9 @@
 
 @media (min-width: @tablet-width) {
   .selection__wrapper {
+    max-width: 628px;
     padding: 0 70px;
+    margin: 0 auto;
   }
 
   .selection__list {
@@ -168,8 +171,9 @@
 
   .selection__footer-wrapper {
     flex-direction: row;
-    max-width: 708px;
+    max-width: 628px;
     padding: 0 70px;
+    margin: 0 auto;
   }
 
   .selection__footer-link {
