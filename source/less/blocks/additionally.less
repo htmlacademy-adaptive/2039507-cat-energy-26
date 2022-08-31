@@ -1,7 +1,43 @@
+.additionally {
+  display: flex;
+  flex-direction: column;
+  max-width: 280px;
+}
+
 .additionally__label {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+.additionally__list {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.additionally__item {
+  height: 30px;
+  padding-left: 46px;
+}
+
+@media (min-width: @tablet-width) {
+  .additionally {
+    max-width: 565px;
+    height: 90px;
+    flex-wrap: wrap;
+  }
+
+  .additionally__item {
+    height: 40px;
+    padding-left: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additionally {
+    max-width: 1220px;
+    flex-direction: row;
+  }
 }

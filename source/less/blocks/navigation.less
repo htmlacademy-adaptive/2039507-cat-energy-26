@@ -1,15 +1,43 @@
 .navigation__list {
+  .margins;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
-  margin: 0;
-  padding: 0;
   list-style-type: none;
+}
+
+.navigation__item {
+  text-align: center;
+  padding: 24px 0;
+  box-sizing: border-box;
 }
 
 .navigation__link {
   text-decoration: none;
-  color: #000000;
   text-transform: uppercase;
+  color: @black;
+}
+
+@media (min-width: @tablet-width) {
+  .navigation__list {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+  }
+
+  .navigation__item:not(:last-child) {
+    margin-right: 36px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .navigation__link--white {
+    color: @white;
+  }
+
+  .navigation__item {
+    z-index: 1;
+  }
 }

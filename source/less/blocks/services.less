@@ -1,13 +1,38 @@
-.services {
-  margin-top: 228px;
+.services__wrapper {
+  margin: 0 auto;
+  margin-top: 200px;
+
+  padding: 0 20px;
 }
 
 .services__list {
-  margin: 0;
-  padding: 0;
+  .margins;
   list-style-type: none;
 }
 
 .services__item:not(:last-child) {
   margin-bottom: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .services__wrapper {
+    .margins;
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .services__wrapper {
+    padding: 0 110px;
+  }
+
+  .services__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  .services__item:not(:last-child) {
+    margin: 0;
+    margin-right: 80px;
+  }
 }

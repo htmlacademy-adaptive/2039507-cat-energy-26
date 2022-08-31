@@ -1,9 +1,10 @@
-.form__wrapper {
-  padding: 0 20px;
+.form__selction {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .form__title {
-  .margins;
+  margin: 27px 20px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
@@ -11,10 +12,38 @@
 }
 
 .form__recommendation {
-  .margins;
+  margin: 20px;
+  margin-bottom: 37px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  width: 262px;
+}
+
+@media (min-width: @tablet-width) {
+  .form__title {
+    margin: 70px 65px;
+    padding-bottom: 54px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .form__recommendation {
+    width: 323px;
+    margin: 70px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__title {
+    margin: 110px;
+  }
+
+  .form__recommendation {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 110px;
+  }
 }
