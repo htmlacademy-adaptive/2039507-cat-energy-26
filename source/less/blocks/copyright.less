@@ -14,12 +14,21 @@
   color: @special_dark-grey;
   width: 280px;
   padding-bottom: 20px;
+
+  .copyright__image {
+    color: #666666;
+
+    &:hover {
+      fill: @basic-green;
+    }
+  }
 }
 
 @media (min-width: @tablet-width) {
   .copyright__link {
     justify-content: end;
     margin-top: 20px;
+    width: 165px;
   }
 
   .copyright__text {
