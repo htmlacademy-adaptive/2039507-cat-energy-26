@@ -42,7 +42,7 @@
 
 @media (min-width: @tablet-width) {
   .advantages {
-    background-image: linear-gradient(@white 30%, @light-grey 30%);
+    background-image: linear-gradient(@white 20%, @light-grey 20%);
   }
 
   .advantages__wrapper {
@@ -54,7 +54,7 @@
   .advantages__item-fat {
     position: absolute;
     background-image: url("../img/fat-cat-tablet.png"),
-      linear-gradient(@white 35%, @light-grey 35%);
+      linear-gradient(@white 23%, @light-grey 23%);
     background-repeat: no-repeat;
     width: 290px;
     height: 530px;
@@ -73,7 +73,12 @@
 }
 
 @media (min-width: @desktop-width) {
-  .advantages {
-    background-color: transparent;
+  .advantages__wrapper {
+    margin-top: 93px;
+  }
+
+  .advantages__item-fat {
+    background-image: url("../img/fat-cat-tablet.png"),
+      linear-gradient(@white 9%, @light-grey 9%);
   }
 }
