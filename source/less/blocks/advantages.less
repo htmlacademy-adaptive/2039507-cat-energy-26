@@ -1,0 +1,79 @@
+.advantages {
+  background-color: @light-grey;
+}
+
+.advantages__wrapper {
+  height: 256px;
+  width: 320px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.advantages__list {
+  .margins;
+  list-style-type: none;
+}
+
+@media (max-width: 767px) {
+  .advantages__item-fat {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 25px;
+    overflow: hidden;
+    width: 150px;
+    height: 230px;
+    background-image: url("../img/fat-cat-mobile.png");
+    background-color: @light-grey;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+
+  .advantages__item-skinny {
+    position: absolute;
+    content: "";
+    left: 62px;
+    background-image: url("../img/skinny-cat-mobile.png");
+    background-repeat: no-repeat;
+    width: 220px;
+    height: 230px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .advantages {
+    background-image: linear-gradient(@white 30%, @light-grey 30%);
+  }
+
+  .advantages__wrapper {
+    width: 560px;
+    height: 616px;
+    margin: 0 auto;
+  }
+
+  .advantages__item-fat {
+    position: absolute;
+    background-image: url("../img/fat-cat-tablet.png"),
+      linear-gradient(@white 35%, @light-grey 35%);
+    background-repeat: no-repeat;
+    width: 290px;
+    height: 530px;
+    left: 0;
+    z-index: 1;
+  }
+
+  .advantages__item-skinny {
+    position: absolute;
+    background-image: url("../img/skinny-cat-tablet.png");
+    background-repeat: no-repeat;
+    width: 560px;
+    height: 530px;
+    left: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages {
+    background-color: transparent;
+  }
+}

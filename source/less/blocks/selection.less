@@ -1,0 +1,230 @@
+.selection {
+  display: flex;
+  flex-direction: column;
+}
+
+.selection__wrapper {
+  margin: 0 auto;
+}
+
+.selection__fieldset {
+  .margins;
+  padding: 20px 0;
+  border: none;
+}
+
+.selection__fieldset-name {
+  border: none;
+}
+
+.selection__fieldset-services {
+  border: none;
+  border-top: 1px solid @light-grey;
+  border-bottom: 1px solid @light-grey;
+}
+
+.selection__list {
+  .margins;
+  list-style-type: none;
+  max-width: 280px;
+}
+
+.selection__item {
+  margin-bottom: 13px;
+}
+
+.selection__label {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @special_dark-grey-2;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.selection__input {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding: 14px 0;
+  padding-left: 15px;
+  margin-left: 10px;
+  color: @special_dark-grey;
+  box-sizing: border-box;
+}
+
+.selection__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  padding: 0 20px;
+  margin-bottom: 35px;
+  position: relative;
+  top: -30px;
+  left: 0;
+  border-top: 3px solid @basic-green;
+}
+
+.selection__control-email,
+.selection__control-tel {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding: 14px 0;
+  padding-left: 15px;
+  box-sizing: border-box;
+  width: 219px;
+}
+
+.selection__control-comment {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding: 14px 0;
+  padding-left: 15px;
+  box-sizing: border-box;
+  min-width: 280px;
+}
+
+
+.selection__legend {
+  .margins;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  width: 45%;
+}
+
+.selection__footer-wrapper {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.selection__footer-link {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 0;
+  text-align: center;
+  color: @white;
+  background-color: @basic-green;
+  display: block;
+}
+
+.selection__footer-legend {
+  .margins;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  padding-top: 13px;
+}
+
+@media (min-width: @tablet-width) {
+  .selection__wrapper {
+    max-width: 628px;
+    padding: 0 70px;
+    margin: 0 auto;
+  }
+
+  .selection__list {
+    max-width: 630px;
+  }
+
+  .selection__legend {
+    margin-left: 200px;
+  }
+
+  .selection__label {
+    max-width: 630px;
+    margin: 0 auto;
+  }
+
+  .selection__control-email,
+  .selection__control-tel {
+    width: 535px;
+  }
+
+  .selection__control-comment {
+    width: 631px;
+  }
+
+  .selection__footer-wrapper {
+    flex-direction: row;
+    max-width: 628px;
+    padding: 0 70px;
+    margin: 0 auto;
+  }
+
+  .selection__footer-link {
+    width: 100%;
+  }
+
+  .selection__footer-legend {
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .selection__wrapper {
+    max-width: 1220px;
+    padding: 0 110px;
+    margin: 0 auto;
+  }
+
+  .selection__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .selection__fieldset-name {
+    margin-right: 80px;
+  }
+
+  .selection__fieldset-name,
+  .selection__fieldset-services {
+    width: 570px;
+  }
+
+  .selection__control-comment {
+    min-width: 1220px;
+  }
+
+  .selection__list {
+    display: flex;
+    flex-direction: column;
+    max-width: 570px;
+  }
+
+  .selection__list:nth-child(2) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .selection__label {
+    max-width: 670px;
+  }
+
+  .selection__footer-wrapper {
+    max-width: 1220px;
+    padding: 0 110px;
+    margin: 0 auto;
+  }
+}

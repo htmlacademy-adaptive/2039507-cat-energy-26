@@ -1,0 +1,27 @@
+.slider__toggle {
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/slider-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 40px;
+  height: 280px;
+  position: absolute;
+  bottom: 0;
+  left: 155px;
+  z-index: 2;
+}
+
+@media (min-width: @tablet-width) {
+  .slider__toggle {
+    background-color: transparent;
+    background-image: url("../img/slider-tablet.svg");
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 560px;
+    position: absolute;
+    top: 0;
+    left: 270px;
+    z-index: 2;
+  }
+}

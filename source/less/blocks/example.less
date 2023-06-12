@@ -1,0 +1,56 @@
+.example {
+  background-color: @light-grey;
+}
+
+.example__title {
+  .margins;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  padding-top: 25px;
+  margin-bottom: 40px;
+}
+
+.example__description {
+  .margins;
+  color: @special_dark-grey;
+  margin-bottom: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .example {
+    background-color: @white;
+  }
+
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .example__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example {
+    background-color: transparent;
+  }
+
+  .example__wrapper {
+    padding-right: 800px;
+    min-height: 600px;
+  }
+
+  .example__title {
+    margin-bottom: 146px;
+  }
+
+  .example__description {
+    width: 436px;
+    margin-bottom: 70px;
+  }
+}

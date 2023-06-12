@@ -1,0 +1,21 @@
+.products-and-gift-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .products-and-gift-wrapper {
+    width: 708px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .products-and-gift-wrapper {
+    width: 1440px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

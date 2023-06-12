@@ -1,0 +1,161 @@
+.description__wrapper {
+  position: relative;
+  min-height: 380px;
+}
+
+.description__list {
+  .margins;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.description__title {
+  .margins;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.description__item {
+  margin-bottom: 10px;
+  position: relative;
+  min-height: 60px;
+}
+
+.description__item::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  background-color: @basic-green;
+  width: 60px;
+  height: 60px;
+}
+
+.description__icon-leaf,
+.description__icon-tub,
+.description__icon-eat,
+.description__icon-alarm {
+  position: absolute;
+}
+
+.description__icon-leaf {
+  width: 26px;
+  height: 26px;
+  top: 18px;
+  left: 28px;
+}
+
+.description__icon-tub {
+  width: 29px;
+  height: 31px;
+  top: 10px;
+  left: 27px;
+}
+
+.description__icon-eat {
+  width: 25px;
+  height: 30px;
+  top: 16px;
+  left: 27px;
+}
+
+.description__icon-alarm {
+  width: 32px;
+  height: 33px;
+  top: 16px;
+  left: 25px;
+}
+
+.description__text {
+  .margins;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400px;
+  line-height: 18px;
+  color: @special_dark-grey;
+  padding-left: 80px;
+}
+
+@media (min-width: @tablet-width) {
+  .description__title {
+    margin-top: 45px;
+    margin-bottom: 41px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .description__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .description__item {
+    height: 280px;
+  }
+
+  .description__item:not(:last-child) {
+    margin-right: 150px;
+  }
+
+  .description__text {
+    width: 200px;
+    margin-top: 120px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    padding: 0;
+  }
+
+  .description__item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: @basic-green;
+    width: 80px;
+    height: 80px;
+  }
+
+  .description__icon-leaf {
+    width: 30px;
+    height: 32px;
+    top: 25px;
+  }
+
+  .description__icon-tub {
+    width: 29px;
+    height: 31px;
+    top: 25px;
+  }
+
+  .description__icon-eat {
+    width: 25px;
+    height: 30px;
+    top: 25px;
+  }
+
+  .description__icon-alarm {
+    width: 32px;
+    height: 33px;
+    top: 25px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .description__wrapper {
+    min-height: 440px;
+  }
+
+  .description__item:not(:last-child) {
+    .margins;
+  }
+
+  .description__list {
+    justify-content: space-between;
+  }
+}
