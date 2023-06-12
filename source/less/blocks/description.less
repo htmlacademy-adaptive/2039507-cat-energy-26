@@ -1,6 +1,6 @@
 .description__wrapper {
   position: relative;
-  min-height: 420px;
+  min-height: 380px;
 }
 
 .description__list {
@@ -17,10 +17,12 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .description__item {
+  margin-bottom: 10px;
   position: relative;
   min-height: 60px;
 }
@@ -34,9 +36,7 @@
   height: 60px;
 }
 
-.description__item:not(:last-child) {
-  margin-bottom: 20px;
-}
+
 
 .description__icon-leaf,
 .description__icon-tub,
@@ -84,13 +84,10 @@
 }
 
 @media (min-width: @tablet-width) {
-  .description__wrapper {
-    min-height: 800px;
-  }
 
   .description__title {
     margin-top: 45px;
-    margin-bottom: 32px;
+    margin-bottom: 41px;
     font-size: 60px;
     line-height: 60px;
   }

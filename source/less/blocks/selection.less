@@ -1,10 +1,14 @@
 .selection {
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
 
+.selection__wrapper {
+  margin: 0 auto;
+}
+
 .selection__fieldset {
+  .margins;
   padding: 20px 0;
   border: none;
 }
@@ -22,7 +26,6 @@
 .selection__list {
   .margins;
   list-style-type: none;
-  margin: 0 auto;
   max-width: 280px;
 }
 
@@ -40,7 +43,6 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
-  max-width: 280px;
 }
 
 .selection__input {
@@ -51,7 +53,7 @@
   text-transform: uppercase;
   padding: 14px 0;
   padding-left: 15px;
-  width: 100%;
+  margin-left: 10px;
   color: @special_dark-grey;
   box-sizing: border-box;
 }
@@ -94,11 +96,6 @@
   min-width: 280px;
 }
 
-.selection__wrapper {
-  max-width: 280px;
-  padding: 0 20px;
-  margin: 0 auto;
-}
 
 .selection__legend {
   .margins;
