@@ -43,6 +43,18 @@
 .card__data {
   display: flex;
   justify-content: space-between;
+  position: relative;
+  margin-bottom: 5px;
+
+  @media (max-width: 767px) {
+    ::after {
+      content: "..........................";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
 }
 
 .card__order {
@@ -164,7 +176,6 @@
   }
 
   .card__image {
-    width: 161px;
     height: 172px;
   }
 
