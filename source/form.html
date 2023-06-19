@@ -17,7 +17,7 @@
           <div class="logo__text"></div>
         </a>
 
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <span class="visually-hidden">открыть меню</span>
           <button class="main-nav__toggle" type="button"></button>
           <ul class="main-nav__list">
@@ -29,8 +29,8 @@
                 >каталог продукции</a
               >
             </li>
-            <li class="main-nav__item main-nav__link--current">
-              <a class="main-nav__link" href="form.html">подбор программы</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--current" href="form.html">подбор программы</a>
             </li>
           </ul>
         </nav>
@@ -59,6 +59,7 @@
                 placeholder="барсик"
                 name="name"
                 id="name"
+                required
               />
             </li>
             <li class="selection__item">
@@ -69,6 +70,7 @@
                 placeholder="7"
                 name="weight"
                 id="weight"
+                required
               />
             </li>
             <li class="selection__item">
@@ -138,6 +140,7 @@
                 placeholder="kuklachev@gmail.com"
                 name="email"
                 id="email"
+                required
               />
             </li>
             <li class="selection__item">
@@ -148,6 +151,7 @@
                 placeholder="8 (960) 900-60-90"
                 name="telephone"
                 id="telephone"
+                required
               />
             </li>
           </ul>
@@ -359,5 +363,6 @@
         </ul>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
