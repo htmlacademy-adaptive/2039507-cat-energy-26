@@ -8,6 +8,8 @@
   list-style-type: none;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  min-height: 300px;
 }
 
 .description__title {
@@ -28,14 +30,10 @@
 .description__item::before {
   content: "";
   position: absolute;
-  left: 10px;
+  left: 0;
   background-color: @basic-green;
   width: 60px;
   height: 60px;
-}
-
-.description__item:not(:last-child) {
-  margin-bottom: 20px;
 }
 
 .description__icon-leaf,
@@ -49,28 +47,28 @@
   width: 26px;
   height: 26px;
   top: 18px;
-  left: 28px;
+  left: 20px;
 }
 
 .description__icon-tub {
   width: 29px;
   height: 31px;
   top: 10px;
-  left: 27px;
+  left: 16px;
 }
 
 .description__icon-eat {
   width: 25px;
   height: 30px;
   top: 16px;
-  left: 27px;
+  left: 18px;
 }
 
 .description__icon-alarm {
   width: 32px;
   height: 33px;
-  top: 16px;
-  left: 25px;
+  top: 14px;
+  left: 15px;
 }
 
 .description__text {
@@ -78,16 +76,12 @@
   font-family: "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400px;
-  line-height: 18px;
+  line-height: 20px;
   color: @special_dark-grey;
   padding-left: 80px;
 }
 
 @media (min-width: @tablet-width) {
-  .description__wrapper {
-    min-height: 800px;
-  }
-
   .description__title {
     margin-top: 45px;
     margin-bottom: 32px;
@@ -98,18 +92,30 @@
   .description__list {
     flex-direction: row;
     flex-wrap: wrap;
+    counter-reset: description__list-counter;
+    padding-right: 90px;
   }
 
   .description__item {
-    height: 280px;
+    min-width: 270px;
+    min-height: 280px;
+    counter-increment: description__list-counter;
   }
 
-  .description__item:not(:last-child) {
-    margin-right: 150px;
+  .description__item::after {
+    content: counter(description__list-counter);
+    position: absolute;
+    top: 90px;
+    right: 10px;
+    width: 112px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 280px;
+    color: @light-grey;
+    z-index: -1;
   }
 
   .description__text {
-    width: 200px;
+    max-width: 245px;
     margin-top: 120px;
     font-size: 16px;
     line-height: 24px;
@@ -157,11 +163,7 @@
     min-height: 440px;
   }
 
-  .description__item:not(:last-child) {
-    .margins;
-  }
-
   .description__list {
-    justify-content: space-between;
+    .margins;
   }
 }
